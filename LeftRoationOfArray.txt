@@ -1,0 +1,19 @@
+ // Complete the rotLeft function below.
+    static int[] rotLeft(int[] a, int d) {
+        int size=a.length;
+        int[] rotateArray=new int[size];
+        int i=0;
+        int rotateIndex=d;
+        while(rotateIndex < size){
+            rotateArray[i]=a[rotateIndex];
+            i++;
+            rotateIndex++;
+        }
+        rotateIndex=0;
+        while(rotateIndex < d){
+             rotateArray[i]=a[rotateIndex];
+            i++;
+            rotateIndex++;
+        }
+        return rotateArray;
+    }
